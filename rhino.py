@@ -5,7 +5,7 @@ import sys
 try:
     import ipaddress
 except ImportError:
-    print("Couldn't find ipaddress module. Module requires python3.3+, you are using {}".format(sys.version_info.split(" ")[0]))
+    print("Couldn't find ipaddress module. Module requires python3.3+, you are using {}".format(sys.version.split(" ")[0]))
     sys.exit()
 
 parser = argparse.ArgumentParser()
